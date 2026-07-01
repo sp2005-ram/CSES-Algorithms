@@ -1,2 +1,3 @@
-# graph-algorithms
-Foundational Graph Algorithms
+# CSES-Algorithms
+
+
