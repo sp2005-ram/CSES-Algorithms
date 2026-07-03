@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'CSES-Algorithms/**/*.cpp'
+      - '**/*.cpp' # Triggers when ANY .cpp file changes anywhere in the repo
 
 jobs:
   update-readme:
