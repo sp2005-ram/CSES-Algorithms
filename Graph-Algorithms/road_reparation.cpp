@@ -3,7 +3,7 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-
+//MST using Disjoint Set Union
 class DSU{
 	vector<int>parent,rank;
 	public:
