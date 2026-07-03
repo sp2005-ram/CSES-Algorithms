@@ -11,7 +11,12 @@ def generate_table():
     "Introductory-Problems",
     "Dynamic-Programming",
     "Sorting-and-Searching",
-    "Graph-Algorithms"
+    "Graph-Algorithms",
+    "Tree-Algorithms",
+    "Mathematics",
+    "String-Algorithms",
+    "Geometry",
+    "Sliding-Window-Problems"
   }
   '''
   if not os.path.exists(target_dir):
