@@ -5,7 +5,7 @@
 #include<queue>
 
 using namespace std;
-
+//Shortest Path in unweighted graph
 void bfs(vector<vector<int>>&graphs, vector<int>&parent, vector<int>&distance){
 	queue<int>q;
 	int source = 1;
