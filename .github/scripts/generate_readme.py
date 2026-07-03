@@ -7,24 +7,30 @@ def clean_display_name(text):
   return name.replace('-', ' ').replace('_',' ')
 
 def generate_table():
-  target_dir = "CSES-Algorithms"
-
+  target_categories = {
+    "Introductory-Problems",
+    "Dynamic-Programming",
+    "Sorting-and-Searching",
+    "Graph-Algorithms"
+  }
+  '''
   if not os.path.exists(target_dir):
     return "<!-- Error: CSES-Algorithms directory not found -->"
-
+  '''
   rows = []
-  for category_folder in os.listdir(target_dir):
-    category_path = os.path.join(target_dir, category_folder)
-
-    
-    if os.path.isdir(category_path) and not category_folder.startswith('.'):
+  for category_folder in os.listdir('.'):
+    if category_folder in target_categories and os.path.isdir(category_folder):
       category_name = clean_display_name(category_folder)
+      category_path = category_folder
       for file in os.listdir(category_path):
         if file.endswith('cpp'):
           rel_path = os.path.join(category_path, file)
           url_path = rel_path.replace(' ', '%20').replace('\\', '/')
           problem_name = clean_display_name(file)
           rows.append((category_name, problem_name, url_path))
+
+  if not rows:
+    return "| Category | Problem | Solution Link |\n| --- | --- | --- |\n| *No solutions detected yet* | | |"
   rows.sort(key=lambda x: (x[0], x[1]))
   md_content = "| Category | Problem | Solution Link |\n| --- | --- | --- |\n"
   for cat,name,path in rows:
