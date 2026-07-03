@@ -1,5 +1,5 @@
 //Sri Rama Jayam
-
+//Dijkstra's algorithm
 #include<iostream>
 #include<stdio.h>
 #include<vector>
