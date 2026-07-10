@@ -9,6 +9,7 @@ My solutions to the CSES Problem Set implemented in C++.
 | **Dynamic Programming** | book shop | [View Code](Dynamic-Programming/book_shop.cpp) |
 | **Dynamic Programming** | coin combinations1 | [View Code](Dynamic-Programming/coin_combinations1.cpp) |
 | **Dynamic Programming** | coin combinations2 | [View Code](Dynamic-Programming/coin_combinations2.cpp) |
+| **Dynamic Programming** | counting numbers | [View Code](Dynamic-Programming/counting_numbers.cpp) |
 | **Dynamic Programming** | counting towers | [View Code](Dynamic-Programming/counting_towers.cpp) |
 | **Dynamic Programming** | dice combinations | [View Code](Dynamic-Programming/dice_combinations.cpp) |
 | **Dynamic Programming** | edit distance | [View Code](Dynamic-Programming/edit_distance.cpp) |
